@@ -75,7 +75,7 @@ body{
   }
 
   #add_toppings{
-	width:150px;
+	width:200px;
 	height:100px;
 	border: none;
 	background-color:#e2062c;
@@ -104,7 +104,27 @@ body{
 	color: white;
  }
 
-#im1{
+ol.menulist>li
+{
+	padding-bottom:20px;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+ }
+ 
+ div.card {
+    flex: 0 0 30%;
+	box-sizing: border-box;
+	color:black;
+	margin: 0.5rem .18em;
+	background-color: antiquewhite;
+	align-items: center;
+	font-size: medium;
+}
+.card img{
 	width:100px;
 	height: 80px;
 }
