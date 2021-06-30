@@ -13,8 +13,7 @@
     <div class="topnav">
         <a class="active" href="#">Pizzeria</a>
         <div class="topnav-right">
-         <a href="#viewblock">View Menu</a>
-         <a href="#addTopings">Add Item to Menu</a>
+         <a href="#viewblock" onclick="show_menu()">View Menu</a>
         </div>
     </div>
 
@@ -22,19 +21,13 @@
         <div class="img_div"> 
             <img class="img-responsive" src="images/pizza.png">
         </div>
-        <div class="menu_div">
-            <button id="menu_list" onclick="getmenu()" style="margin-bottom: 50px;">Show Menu</button>
-           <div id="display_menu"></div>
-        </div>
     </div>
     
     <div class="newRow" id="addTopings">
-        <div class="block1" style="margin-left: 900px;">
-            <input id="add_item" placeholder="Type here to add menu item"> 
-			<button class="btn btn-success" onclick="add_top()> </button>
-            <button id="add_toppings" onclick="add_item()">Show Pizza</button>
+        <div class="block1">
+            <input id="add_item" placeholder="Type to add pizza" style="display: none;"> 
+			<button class="btn btn-success" id="add_btn" onclick="add_top()" style="display: none;">Add Pizza</button><br><br>
         </div>
-		
         <div class="block2">
             <div id="display_addedmenu">
             </div>
@@ -47,4 +40,5 @@
     </div>
 
 
-</body> </html>
+
+</body></html>
